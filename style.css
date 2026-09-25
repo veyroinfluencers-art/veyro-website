@@ -101,4 +101,19 @@ a:hover {
   letter-spacing: 7px;
   left: 7px;
   top: 12px;
+}.header nav a,
+.header nav a:visited,
+.header nav a:active,
+.header nav a:focus {
+  color: #111 !important;
+  text-decoration: none !important;
+}
+
+.header nav a:hover {
+  color: #555 !important;
+}.btn,
+.btn:visited,
+.btn:active,
+.btn:focus {
+  text-decoration: none;
 }
