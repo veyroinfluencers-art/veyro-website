@@ -41,7 +41,18 @@ a:focus {
 .lightbtn:active{
   color:#111 !important;
   background:#fff;
-}.header{height:92px;display:flex;align-items:center;padding:0 6vw;gap:5vw;background:#f3f3f0;position:sticky;top:0;z-index:20;border-bottom:1px solid #ddd}.brand{display:flex;flex-direction:column;align-items:center;line-height:1;letter-spacing:.2em;font-size:15px}.vmark{font:italic 43px Georgia;letter-spacing:0}.header nav{display:flex;gap:34px}.header nav a,.icons span{font-size:14px;letter-spacing:.08em}.icons{margin-left:auto;display:flex;gap:22px;font-size:23px}.menu{display:none;background:none;border:0;font-size:25px}.hero{
+}.header{height:92px;display:flex;align-items:center;padding:0 6vw;gap:5vw;background:#f3f3f0;position:sticky;top:0;z-index:20;border-bottom:1px solid #ddd}.brand {
+  display: flex;
+  align-items: center;
+  width: 120px;
+}
+
+.brand img {
+  display: block;
+  width: 120px;
+  height: auto;
+  object-fit: contain;
+}.vmark{font:italic 43px Georgia;letter-spacing:0}.header nav{display:flex;gap:34px}.header nav a,.icons span{font-size:14px;letter-spacing:.08em}.icons{margin-left:auto;display:flex;gap:22px;font-size:23px}.menu{display:none;background:none;border:0;font-size:25px}.hero{
   min-height:680px;
   display:flex;
   align-items:flex-end;
@@ -183,4 +194,20 @@ a:focus {
 
 .darkbtn:hover {
   background: #333 !important;
+}/* VEYRO HEADER */
+.header .brand {
+  color: #111111 !important;
+}
+
+.header .brand img {
+  width: 120px;
+  height: auto;
+}
+
+.header nav a,
+.header nav a:visited,
+.header nav a:hover,
+.header nav a:active,
+.header nav a:focus {
+  color: #111111 !important;
 }
