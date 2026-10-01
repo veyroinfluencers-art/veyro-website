@@ -53,7 +53,7 @@ a:focus {
   height: auto;
   object-fit: contain;
 }.vmark{font:italic 43px Georgia;letter-spacing:0}.header nav{display:flex;gap:34px}.header nav a,.icons span{font-size:14px;letter-spacing:.08em}.icons{margin-left:auto;display:flex;gap:22px;font-size:23px}.menu{display:none;background:none;border:0;font-size:25px}.hero{
-  min-height:680px;
+ min-height:520px
   display:flex;
   align-items:flex-end;
   padding:0 6vw 75px;
