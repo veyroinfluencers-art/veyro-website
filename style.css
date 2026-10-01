@@ -215,4 +215,9 @@ object-fit:contain;
 .header nav a:active,
 .header nav a:focus {
   color: #111111 !important;
-}
+}/* VEYRO heading sizes */
+.hero h1{font-size:clamp(38px,5vw,64px)}
+.about h2,.why h2,.contact h2{font-size:clamp(34px,4vw,54px)}
+.services>h2,.work>h2{font-size:clamp(40px,5vw,60px)}
+.creators h2{font-size:clamp(38px,4.5vw,56px)}
+.cta h2{font-size:clamp(40px,5vw,60px)}
