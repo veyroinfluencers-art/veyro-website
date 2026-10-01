@@ -225,4 +225,19 @@ object-fit:contain;
   height:450px;
   object-fit:cover;
   display:block;
+}.creators{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:7vw;
+  align-items:center;
+}
+
+.creator-image{
+  width:100%;
+  height:450px;
+  object-fit:cover;
+}
+
+.creators > div:last-child{
+  align-self:center;
 }
