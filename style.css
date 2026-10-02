@@ -239,3 +239,13 @@ object-fit:contain;
   object-fit:cover;
   display:block;
 }
+.campaign-showcase {
+  max-width: 750px;
+  margin: 50px auto 0;
+}
+
+.campaign-showcase img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
