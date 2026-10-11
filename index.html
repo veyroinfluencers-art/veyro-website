@@ -875,6 +875,41 @@ footer {
 
 }
 
+    /* VEYRO WORK SECTION — IMAGE SIZE FIX */
+
+#work .work-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+}
+
+#work .work-card {
+    min-width: 0;
+    overflow: hidden;
+    justify-content: flex-start;
+    gap: 18px;
+}
+
+#work .work-image {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: 180px;
+    object-fit: cover;
+    object-position: center;
+    margin: 0;
+}
+
+@media (max-width: 900px) {
+    #work .work-grid {
+        grid-template-columns: 1fr;
+    }
+
+    #work .work-image {
+        height: 200px;
+    }
+} 
+    
 </style>
 </head>
 
