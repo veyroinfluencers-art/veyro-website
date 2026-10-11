@@ -845,4 +845,25 @@ footer {
     display: block;
     width: 120px;
     height: auto;
+}/* VEYRO — Work section images */
+
+.work-image {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    object-position: center;
+    margin-bottom: 24px;
+    border-radius: 2px;
+}
+
+.work-card {
+    min-width: 0;
+}
+
+@media (max-width: 768px) {
+    .work-image {
+        aspect-ratio: 4 / 3;
+        margin-bottom: 18px;
+    }
 }
