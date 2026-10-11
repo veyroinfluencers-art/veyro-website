@@ -867,13 +867,17 @@ footer {
         margin-bottom: 18px;
     }
 }
-/* ================= VEYRO PORTFOLIO IMAGES ================= */
+/* ================= VEYRO WORK IMAGES ================= */
 
-.work-grid {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 24px;
-    align-items: start;
+.work-image {
+    display: block;
+    width: 100%;
+    max-width: 240px;
+    height: 150px;
+    object-fit: cover;
+    object-position: center;
+    margin: 12px auto 20px;
+    border-radius: 3px;
 }
 
 .work-card {
@@ -881,41 +885,20 @@ footer {
     overflow: hidden;
 }
 
-.work-image {
-    display: block;
-    width: 100%;
-    max-width: 280px;
-    height: 180px;
-    object-fit: cover;
-    object-position: center;
-    margin: 12px auto 22px;
-    border-radius: 3px;
-}
-
 /* TABLET */
 
 @media (max-width: 900px) {
-    .work-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        gap: 20px;
-    }
-
     .work-image {
-        max-width: 100%;
-        height: 180px;
+        max-width: 240px;
+        height: 150px;
     }
 }
 
 /* MOBILE */
 
 @media (max-width: 600px) {
-    .work-grid {
-        grid-template-columns: 1fr;
-        gap: 24px;
-    }
-
     .work-image {
         max-width: 100%;
-        height: 200px;
+        height: 190px;
     }
 }
