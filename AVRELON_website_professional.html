@@ -1,0 +1,1712 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AVRÉLON — Where Brands Meet Influence</title>
+
+    <meta
+        name="description"
+        content="AVRÉLON is an influencer marketing agency connecting brands with creators through influencer partnerships, user-generated content (UGC), and strategic campaigns."
+    >
+
+ 
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap"
+        rel="stylesheet"
+    >
+<style>
+:root {
+    --black: #0a0a0a;
+    --white: #ffffff;
+    --light: #f3f3f1;
+    --grey: #777777;
+    --border: #d8d8d5;
+    --serif: "Playfair Display", serif;
+    --sans: "DM Sans", sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: var(--white);
+    color: var(--black);
+    font-family: var(--sans);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.container {
+    width: min(1180px, calc(100% - 48px));
+    margin: 0 auto;
+}
+
+
+/* ================= HEADER ================= */
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background: rgba(255, 255, 255, 0.94);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--border);
+}
+
+.header-inner {
+    height: 76px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    display: inline-flex;
+    align-items: center;
+    line-height: 0;
+}
+
+.wordmark {
+    display: inline-block;
+    color: var(--black);
+    font-family: "Cormorant Garamond", Georgia, serif;
+    font-size: 1.8rem;
+    font-weight: 600;
+    letter-spacing: 0.09em;
+    line-height: 1;
+    white-space: nowrap;
+}
+.logo { line-height: 1; }
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+}
+
+.footer-wordmark { color: var(--white); font-size: 1.65rem; }
+
+
+
+.brand-logo {
+    display: block;
+    width: 190px;
+    height: 62px;
+    object-fit: contain;
+    object-position: center;
+}
+.footer-brand-logo {
+    display: block;
+    width: 180px;
+    height: 90px;
+    object-fit: contain;
+    background: #fff;
+}
+@media (max-width: 600px) {
+    .brand-logo { width: 145px; height: 54px; }
+    .footer-brand-logo { width: 150px; height: 75px; }
+}
+
+nav ul {
+    display: flex;
+    gap: 32px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    position: relative;
+    font-size: 0.82rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+}
+
+nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -7px;
+    width: 0;
+    height: 1px;
+    background: var(--black);
+    transition: width 0.3s ease;
+}
+
+nav a:hover::after,
+nav a.active::after {
+    width: 100%;
+}
+
+.menu-toggle {
+    display: none;
+    border: 0;
+    background: transparent;
+    font-size: 1.6rem;
+    cursor: pointer;
+}
+
+
+/* ================= HERO ================= */
+
+.hero-section {
+    min-height: 100vh;
+    background: var(--black);
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 150px 48px 60px;
+    position: relative;
+}
+
+.hero-content {
+    width: min(1180px, 100%);
+    margin: 0 auto;
+}
+
+.eyebrow {
+    margin: 0 0 28px;
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.22em;
+}
+
+.hero-section h1 {
+    max-width: 900px;
+    margin: 0;
+    font-size: clamp(4rem, 9vw, 8.5rem);
+    line-height: 0.92;
+    letter-spacing: -0.055em;
+    font-weight: 600;
+}
+
+.hero-section h1 em {
+    font-family: var(--serif);
+    font-weight: 600;
+}
+
+.hero-description {
+    max-width: 520px;
+    margin: 42px 0 34px;
+    color: #cfcfca;
+    font-size: 1.05rem;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 50px;
+    padding: 0 25px;
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    transition: 0.3s ease;
+}
+
+.btn-primary {
+    background: var(--white);
+    color: var(--black);
+}
+
+.btn-primary:hover {
+    background: #dcdcd8;
+}
+
+.btn-outline {
+    border: 1px solid #777;
+    color: var(--white);
+}
+
+.btn-outline:hover {
+    border-color: var(--white);
+}
+
+.hero-bottom {
+    width: min(1180px, 100%);
+    margin: auto auto 0;
+    padding-top: 55px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    border-top: 1px solid #333;
+    color: #8d8d88;
+    font-size: 0.65rem;
+    letter-spacing: 0.18em;
+}
+
+
+/* ================= GENERAL SECTIONS ================= */
+
+.section {
+    padding: 130px 0;
+}
+
+.section-label {
+    margin-bottom: 65px;
+    color: #888;
+    font-size: 0.68rem;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+}
+
+.section h2 {
+    margin: 0;
+    font-size: clamp(2.8rem, 6vw, 5.8rem);
+    line-height: 0.98;
+    letter-spacing: -0.045em;
+    font-weight: 600;
+}
+
+.section h2 em {
+    font-family: var(--serif);
+    font-weight: 600;
+}
+
+.large-text {
+    font-size: clamp(1.3rem, 2.2vw, 1.8rem);
+    line-height: 1.35;
+}
+
+
+/* ================= ABOUT ================= */
+
+.about-section {
+    background: var(--white);
+}
+
+.about-content {
+    max-width: 850px;
+    margin-left: auto;
+}
+
+.about-content h2 {
+    margin-bottom: 55px;
+}
+
+.about-content p {
+    max-width: 700px;
+    color: #555;
+    font-size: 1rem;
+}
+
+.about-content .large-text {
+    color: var(--black);
+}
+
+
+/* ================= SERVICES ================= */
+
+.services-section {
+    background: var(--light);
+}
+
+.section-heading {
+    max-width: 850px;
+    margin-bottom: 70px;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border-top: 1px solid var(--border);
+}
+
+.service-item {
+    min-height: 320px;
+    padding: 38px 38px 42px 0;
+    border-bottom: 1px solid var(--border);
+}
+
+.service-item:nth-child(odd) {
+    padding-right: 60px;
+    border-right: 1px solid var(--border);
+}
+
+.service-item:nth-child(even) {
+    padding-left: 60px;
+}
+
+.service-number {
+    display: block;
+    margin-bottom: 60px;
+    color: #999;
+    font-size: 0.7rem;
+    letter-spacing: 0.15em;
+}
+
+.service-item h3 {
+    max-width: 300px;
+    margin: 0 0 18px;
+    font-size: 2rem;
+    line-height: 1;
+    letter-spacing: -0.03em;
+}
+
+.service-item p {
+    max-width: 400px;
+    margin: 0;
+    color: var(--grey);
+}
+
+
+/* ================= CREATORS ================= */
+
+.creators-section {
+    background: var(--black);
+    color: var(--white);
+}
+
+.creators-section .section-label {
+    color: #777;
+}
+
+.creators-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 100px;
+}
+
+.creators-section h2 {
+    color: var(--white);
+}
+
+.creators-copy {
+    padding-top: 10px;
+}
+
+.creators-copy p {
+    color: #aaa;
+    max-width: 520px;
+}
+
+.creators-copy .large-text {
+    color: var(--white);
+}
+
+.text-link {
+    display: inline-block;
+    margin-top: 25px;
+    padding-bottom: 7px;
+    border-bottom: 1px solid #777;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.text-link:hover {
+    border-color: var(--white);
+}
+
+
+/* ================= WHY AVRÉLON ================= */
+
+.why-section {
+    background: var(--white);
+}
+
+.why-content {
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr;
+    gap: 100px;
+}
+
+.why-points {
+    border-top: 1px solid var(--border);
+}
+
+.why-points > div {
+    padding: 32px 0;
+    border-bottom: 1px solid var(--border);
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    column-gap: 25px;
+}
+
+.why-points span {
+    color: #999;
+    font-size: 0.7rem;
+    letter-spacing: 0.1em;
+}
+
+.why-points h3 {
+    margin: 0 0 8px;
+    font-size: 1.3rem;
+}
+
+.why-points p {
+    grid-column: 2;
+    max-width: 480px;
+    margin: 0;
+    color: var(--grey);
+}
+
+
+/* ================= WORK ================= */
+
+.work-section {
+    background: var(--light);
+}
+
+.section-heading > p {
+    max-width: 620px;
+    margin-top: 28px;
+    color: var(--grey);
+}
+
+.work-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.work-card {
+    min-height: 360px;
+    padding: 30px;
+    background: var(--white);
+    border: 1px solid var(--border);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s ease;
+}
+
+.work-card:hover {
+    transform: translateY(-6px);
+}
+
+.work-number {
+    color: #aaa;
+    font-size: 0.7rem;
+}
+
+.work-category {
+    color: #888;
+    font-size: 0.65rem;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+}
+
+.work-card h3 {
+    margin: 15px 0;
+    font-size: 1.8rem;
+    letter-spacing: -0.03em;
+}
+
+.work-card p {
+    margin: 0;
+    color: var(--grey);
+    font-size: 0.9rem;
+}
+
+.portfolio-note {
+    margin-top: 30px;
+    color: #999;
+    font-size: 0.72rem;
+    letter-spacing: 0.04em;
+}
+
+
+/* ================= CONTACT ================= */
+
+.contact-section {
+    background: var(--black);
+    color: var(--white);
+}
+
+.contact-section .section-label {
+    color: #777;
+}
+
+.contact-content {
+    max-width: 900px;
+}
+
+.contact-content h2 {
+    color: var(--white);
+}
+
+.contact-content > p:not(.eyebrow) {
+    max-width: 550px;
+    margin: 35px 0;
+    color: #aaa;
+}
+
+.contact-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.contact-links a {
+    padding-bottom: 8px;
+    border-bottom: 1px solid #555;
+    font-size: 0.9rem;
+}
+
+.contact-links a:hover {
+    border-color: var(--white);
+}
+
+
+
+/* ================= CONTACT FORM ================= */
+
+.contact-form {
+    margin-top: 55px;
+    width: 100%;
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.form-row {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+}
+
+.form-field {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form-field label {
+    display: block;
+    color: #ffffff;
+    font-family: "DM Sans", sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+.form-field input,
+.form-field select,
+.form-field textarea {
+    width: 100%;
+    box-sizing: border-box;
+    display: block;
+    background: #111111;
+    color: #ffffff;
+    border: 1px solid #444444;
+    border-radius: 0;
+    padding: 17px 18px;
+    font-family: "DM Sans", sans-serif;
+    font-size: 15px;
+    outline: none;
+    transition: border-color 0.25s ease, background 0.25s ease;
+}
+
+.form-field input {
+    height: 54px;
+}
+
+.form-field select {
+    height: 54px;
+    cursor: pointer;
+}
+
+.form-field textarea {
+    min-height: 170px;
+    resize: vertical;
+    line-height: 1.6;
+}
+
+.form-field input::placeholder,
+.form-field textarea::placeholder {
+    color: #777777;
+}
+
+.form-field input:focus,
+.form-field select:focus,
+.form-field textarea:focus {
+    border-color: #ffffff;
+    background: #151515;
+}
+
+.form-submit {
+    align-self: flex-start;
+    margin-top: 4px;
+    cursor: pointer;
+    border: none;
+}
+
+@media (max-width: 768px) {
+    .wordmark { font-size: 1.45rem; letter-spacing: 0.06em; }
+
+    .contact-form {
+        margin-top: 40px;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .form-submit {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+
+/* ================= FOOTER ================= */
+
+footer {
+    background: var(--black);
+    color: #888;
+    border-top: 1px solid #222;
+}
+
+.footer-inner {
+    padding: 40px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+}
+
+.footer-inner p {
+    margin: 0;
+    text-align: center;
+    font-size: 0.75rem;
+}
+
+.footer-inner .copyright {
+    text-align: right;
+}
+
+
+/* ================= SCROLL REVEAL ================= */
+
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition:
+        opacity 0.8s ease,
+        transform 0.8s ease;
+}
+
+.reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* ================= TABLET ================= */
+
+@media (max-width: 900px) {
+
+    .section {
+        padding: 100px 0;
+    }
+
+    .creators-layout,
+    .why-content {
+        grid-template-columns: 1fr;
+        gap: 55px;
+    }
+
+    .work-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .work-card {
+        min-height: 300px;
+    }
+
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 768px) {
+
+    .container {
+        width: min(100% - 32px, 1180px);
+    }
+
+    .header-inner {
+        height: 68px;
+    }
+
+    nav ul {
+        display: none;
+        position: absolute;
+        top: 68px;
+        left: 0;
+        width: 100%;
+        padding: 20px 16px;
+        background: var(--white);
+        border-bottom: 1px solid var(--border);
+        flex-direction: column;
+        gap: 0;
+    }
+
+    nav ul.show {
+        display: flex;
+    }
+
+    nav li {
+        border-bottom: 1px solid var(--border);
+    }
+
+    nav li:last-child {
+        border-bottom: 0;
+    }
+
+    nav a {
+        display: block;
+        padding: 15px 5px;
+    }
+
+    nav a::after {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .hero-section {
+        padding: 130px 24px 40px;
+    }
+
+    .hero-section h1 {
+        font-size: clamp(3.2rem, 15vw, 5.5rem);
+    }
+
+    .hero-description {
+        font-size: 0.95rem;
+    }
+
+    .hero-bottom {
+        padding-top: 30px;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    .hero-bottom span {
+        width: 45%;
+    }
+
+    .section {
+        padding: 85px 0;
+    }
+
+    .section-label {
+        margin-bottom: 45px;
+    }
+
+    .section h2 {
+        font-size: clamp(2.7rem, 12vw, 4rem);
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .service-item,
+    .service-item:nth-child(odd),
+    .service-item:nth-child(even) {
+        padding: 30px 0;
+        border-right: 0;
+    }
+
+    .service-number {
+        margin-bottom: 35px;
+    }
+
+    .service-item h3 {
+        font-size: 1.7rem;
+    }
+
+    .footer-inner {
+        grid-template-columns: 1fr;
+        gap: 18px;
+        text-align: center;
+    }
+
+    .footer-inner p,
+    .footer-inner .copyright {
+        text-align: center;
+    }
+
+}
+
+
+/* ================= SMALL MOBILE ================= */
+
+@media (max-width: 480px) {
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .btn {
+        width: 100%;
+    }
+
+    .contact-links {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+}
+
+    /* AVRÉLON WORK SECTION — IMAGE SIZE FIX */
+
+#work .work-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+}
+
+#work .work-card {
+    min-width: 0;
+    overflow: hidden;
+    justify-content: flex-start;
+    gap: 18px;
+}
+
+#work .work-image {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: 180px;
+    object-fit: cover;
+    object-position: center;
+    margin: 0;
+}
+
+@media (max-width: 900px) {
+    #work .work-grid {
+        grid-template-columns: 1fr;
+    }
+
+    #work .work-image {
+        height: 200px;
+    }
+} 
+  /* ===== AVRÉLON PREMIUM DESIGN ===== */
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Consistent section spacing */
+section {
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+/* Elegant headings */
+h1,
+h2,
+h3 {
+    letter-spacing: -0.5px;
+    line-height: 1.2;
+}
+
+/* Premium buttons */
+button,
+.btn,
+.button,
+a.button,
+a.btn {
+    transition: background-color 0.3s ease,
+                color 0.3s ease,
+                transform 0.3s ease;
+}
+
+button:hover,
+.btn:hover,
+.button:hover,
+a.button:hover,
+a.btn:hover {
+    transform: translateY(-2px);
+}
+
+/* Clean campaign cards */
+#work .work-card {
+    border-radius: 12px;
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+#work .work-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* Keep campaign images correctly sized */
+#work .work-image {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: 180px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 8px;
+}
+
+/* Responsive spacing for mobile */
+@media (max-width: 768px) {
+    section {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    #work .work-grid {
+        grid-template-columns: 1fr;
+    }
+}  
+    /* Portfolio disclaimer */
+.portfolio-disclaimer {
+    margin-top: 24px;
+    font-size: 13px;
+    line-height: 1.6;
+    color: #666;
+    text-align: center;
+}
+</style>
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header>
+        <div class="container header-inner">
+
+            <a href="#hero" class="logo" aria-label="AVRÉLON home"><span class="wordmark">AVRÉLON</span></a>
+
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#creators">Creators</a></li>
+                    <li><a href="#work">Work</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+
+            <button
+                class="menu-toggle"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+            >
+                ☰
+            </button>
+
+        </div>
+    </header>
+
+
+    <main>
+
+        <!-- ================= HERO ================= -->
+
+        <section id="hero" class="hero-section">
+
+            <div class="hero-content">
+
+                <p class="eyebrow">
+                    CREATOR MARKETING AGENCY
+                </p>
+
+                <h1>
+                    Where Brands<br>
+                    <em>Meet Influence.</em>
+                </h1>
+
+                <p class="hero-description">
+                    We connect ambitious brands with creators who make
+                    people stop, listen and remember.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="#contact" class="btn btn-primary">
+                        Work With Us
+                    </a>
+
+                    <a href="#creators" class="btn btn-outline">
+                        Explore Creators
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="hero-bottom">
+                <span>FASHION</span>
+                <span>BEAUTY</span>
+                <span>LIFESTYLE</span>
+                <span>D2C</span>
+                <span>UGC</span>
+            </div>
+
+        </section>
+
+
+        <!-- ================= ABOUT ================= -->
+
+        <section id="about" class="section about-section">
+
+            <div class="container">
+
+                <div class="section-label">
+                    01 — ABOUT
+                </div>
+
+                <div class="about-content">
+
+                    <h2>
+                        Influence is more than
+                        <em>reach.</em>
+                    </h2>
+
+                    <p class="large-text">
+                        AVRÉLON is a creator marketing agency built around
+                        meaningful brand–creator connections.
+                    </p>
+
+                    <p>
+                        We help brands discover the right creators,
+                        develop compelling campaigns and turn creator
+                        content into something people genuinely connect with.
+                    </p>
+
+                    <p>
+                        From influencer collaborations to UGC and
+                        campaign strategy, we focus on creating work
+                        that feels authentic to both the brand and its audience.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= SERVICES ================= -->
+
+        <section id="services" class="section services-section">
+
+            <div class="container">
+
+                <div class="section-label">
+                    02 — SERVICES
+                </div>
+
+                <div class="section-heading">
+
+                    <h2>
+                        Built for brands
+                        <em>that want to matter.</em>
+                    </h2>
+
+                </div>
+
+
+                <div class="services-grid">
+
+                    <article class="service-item">
+
+                        <span class="service-number">01</span>
+
+                        <h3>
+                            Influencer
+                            Marketing
+                        </h3>
+
+                        <p>
+                            Strategic creator partnerships designed
+                            to put your brand in front of the right audience.
+                        </p>
+
+                    </article>
+
+
+                    <article class="service-item">
+
+                        <span class="service-number">02</span>
+
+                        <h3>
+                            UGC
+                            Campaigns
+                        </h3>
+
+                        <p>
+                            Authentic creator content made to feel
+                            natural, relatable and built for modern platforms.
+                        </p>
+
+                    </article>
+
+
+                    <article class="service-item">
+
+                        <span class="service-number">03</span>
+
+                        <h3>
+                            Creator
+                            Partnerships
+                        </h3>
+
+                        <p>
+                            We find creators whose personality,
+                            audience and style align with your brand.
+                        </p>
+
+                    </article>
+
+
+                    <article class="service-item">
+
+                        <span class="service-number">04</span>
+
+                        <h3>
+                            Campaign
+                            Strategy
+                        </h3>
+
+                        <p>
+                            From campaign concepts to creator selection,
+                            we build campaigns around clear objectives.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= CREATORS ================= -->
+
+        <section id="creators" class="section creators-section">
+
+            <div class="container">
+
+                <div class="section-label">
+                    03 — CREATORS
+                </div>
+
+                <div class="creators-layout">
+
+                    <div>
+
+                        <h2>
+                            Creators are
+                            <em>the culture.</em>
+                        </h2>
+
+                    </div>
+
+                    <div class="creators-copy">
+
+                        <p class="large-text">
+                            People don't just follow brands.
+                            They follow people they trust.
+                        </p>
+
+                        <p>
+                            AVRÉLON works with creators across fashion,
+                            beauty, skincare, lifestyle, UGC and
+                            D2C-focused content.
+                        </p>
+
+                        <p>
+                            Our approach is simple:
+                            find the right person, for the right brand,
+                            at the right moment.
+                        </p>
+
+                        <a
+                            href="https://www.instagram.com/avrelon.influencers/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="text-link"
+                        >
+                            Meet our creator network →
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= WHY AVRÉLON ================= -->
+
+        <section id="why-avrelon" class="section why-section">
+
+            <div class="container">
+
+                <div class="section-label">
+                    04 — WHY AVRÉLON
+                </div>
+
+                <div class="why-content">
+
+                    <h2>
+                        Less noise.
+                        <br>
+                        More <em>impact.</em>
+                    </h2>
+
+                    <div class="why-points">
+
+                        <div>
+                            <span>01</span>
+                            <h3>Right Creator</h3>
+                            <p>
+                                We look beyond follower counts
+                                and focus on relevance, audience
+                                and content quality.
+                            </p>
+                        </div>
+
+                        <div>
+                            <span>02</span>
+                            <h3>Real Content</h3>
+                            <p>
+                                Content should feel native to the
+                                creator, not like an advertisement
+                                forced into their feed.
+                            </p>
+                        </div>
+
+                        <div>
+                            <span>03</span>
+                            <h3>Clear Strategy</h3>
+                            <p>
+                                Every collaboration starts with
+                                understanding what the brand actually
+                                wants to achieve.
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+  <!-- ================= WORK ================= -->
+
+<section id="work" class="section work-section">
+
+    <div class="container">
+
+        <div class="section-label">05 — WORK</div>
+
+        <div class="section-heading">
+            <h2>Ideas built to <em>be remembered.</em></h2>
+            <p>
+                A look at the kind of creator-led campaigns AVRÉLON develops.
+                Client work will be added as campaigns launch.
+            </p>
+        </div>
+
+        <div class="work-grid">
+
+            <!-- CARD 1: PRODUCT STORIES -->
+
+            <article class="work-card">
+
+                <div class="work-number">01</div>
+<div class="campaign-art campaign-beauty" role="img" aria-label="Beauty campaign concept"><span>AVRÉLON</span><strong>THE BEAUTY EDIT</strong><small>PRODUCT STORIES · UGC</small></div>
+                <div>
+                    <span class="work-category">BEAUTY / UGC</span>
+                    <h3>Product Stories</h3>
+                    <p>
+                        Creator-led beauty content designed around
+                        authentic product discovery, routines and
+                        everyday storytelling.
+                    </p>
+                </div>
+
+            </article>
+
+            <!-- CARD 2: OWN THE MOMENT -->
+
+            <article class="work-card">
+
+                <div class="work-number">02</div>
+
+             <div class="campaign-art campaign-fashion" role="img" aria-label="Fashion campaign concept"><span>AVRÉLON</span><strong>OWN<br>THE MOMENT</strong><small>FASHION · CREATOR CAMPAIGNS</small></div>
+
+                <div>
+                    <span class="work-category">FASHION / INFLUENCE</span>
+                    <h3>Own the Moment</h3>
+                    <p>
+                        Fashion creator concepts combining editorial
+                        visuals with relatable social-first storytelling.
+                    </p>
+                </div>
+
+            </article>
+
+            <!-- CARD 3: MADE FOR CULTURE -->
+
+            <article class="work-card">
+
+                <div class="work-number">03</div>
+
+             <div class="campaign-art campaign-lifestyle" role="img" aria-label="Lifestyle campaign concept"><span>AVRÉLON</span><strong>MADE FOR<br>CULTURE</strong><small>LIFESTYLE · SOCIAL-FIRST</small></div>
+
+                <div>
+                    <span class="work-category">LIFESTYLE / D2C</span>
+                    <h3>Made for Culture</h3>
+                   <p class="portfolio-disclaimer">
+    Portfolio concepts created by AVRÉLON to demonstrate campaign ideas.
+    These are fictional projects, not completed client campaigns.
+</p>
+                </div>
+
+            </article>
+
+        </div>
+
+        <p class="portfolio-note">
+            Portfolio concepts by AVRÉLON — not real client campaigns.
+        </p>
+
+    </div>
+
+</section>
+        <!-- ================= CONTACT ================= -->
+
+        <section id="contact" class="section contact-section">
+
+            <div class="container">
+
+                <div class="section-label">
+                    06 — CONTACT
+                </div>
+
+                <div class="contact-content">
+
+                    <p class="eyebrow">
+                        HAVE A BRAND IN MIND?
+                    </p>
+
+                    <h2>
+                        Let's create something
+                        <em>worth talking about.</em>
+                    </h2>
+
+                    <p>
+                        Tell us what you're building and let's explore
+                        what we can create together.
+                    </p>
+
+                    <div class="contact-links">
+
+                        <a href="mailto:avrelon.partnerships@gmail.com">
+                            avrelon.partnerships@gmail.com
+                        </a>
+
+                        <a
+                            href="https://www.instagram.com/avrelon.influencers/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            @avrelon.influencers
+                        </a>
+
+                    </div>
+
+                    <form
+                        class="contact-form"
+                        action="https://formsubmit.co/avrelon.partnerships@gmail.com"
+                        method="POST"
+                    >
+
+                        <input
+                            type="hidden"
+                            name="_subject"
+                            value="New AVRÉLON Website Enquiry"
+                        >
+
+                        <input
+                            type="hidden"
+                            name="_template"
+                            value="table"
+                        >
+
+                        <input
+                            type="hidden"
+                            name="_captcha"
+                            value="false"
+                        >
+
+                        <div class="form-row">
+
+                            <div class="form-field">
+                                <label for="name">Your Name</label>
+                                <input
+                                    type="text"
+                                    id="name"
+                                    name="name"
+                                    placeholder="Your name"
+                                    required
+                                >
+                            </div>
+
+                            <div class="form-field">
+                                <label for="company">Brand / Company</label>
+                                <input
+                                    type="text"
+                                    id="company"
+                                    name="company"
+                                    placeholder="Your brand or company"
+                                    required
+                                >
+                            </div>
+
+                        </div>
+
+                        <div class="form-row">
+
+                            <div class="form-field">
+                                <label for="email">Email</label>
+                                <input
+                                    type="email"
+                                    id="email"
+                                    name="email"
+                                    placeholder="your@email.com"
+                                    required
+                                >
+                            </div>
+
+                            <div class="form-field">
+                                <label for="social">Instagram / Website</label>
+                                <input
+                                    type="text"
+                                    id="social"
+                                    name="social"
+                                    placeholder="@brand or website"
+                                >
+                            </div>
+
+                        </div>
+
+                        <div class="form-field">
+
+                            <label for="service">What are you looking for?</label>
+
+                            <select id="service" name="service" required>
+
+                                <option value="" disabled selected>
+                                    Select a service
+                                </option>
+
+                                <option value="Influencer Marketing">
+                                    Influencer Marketing
+                                </option>
+
+                                <option value="UGC Campaign">
+                                    UGC Campaign
+                                </option>
+
+                                <option value="Creator Partnership">
+                                    Creator Partnership
+                                </option>
+
+                                <option value="Campaign Strategy">
+                                    Campaign Strategy
+                                </option>
+
+                                <option value="Other">
+                                    Other
+                                </option>
+
+                            </select>
+
+                        </div>
+                    
+
+                        <!-- NEW: Campaign Budget -->
+                        <div class="form-field">
+                            <label for="budget">Estimated Campaign Budget</label>
+
+                            <select id="budget" name="budget">
+                                <option value="" selected>Choose a budget range (optional)</option>
+                                <option value="Under ₹10,000">Under ₹10,000</option>
+                                <option value="₹10,000–₹25,000">₹10,000–₹25,000</option>
+                                <option value="₹25,000–₹50,000">₹25,000–₹50,000</option>
+                                <option value="₹50,000–₹1,00,000">₹50,000–₹1,00,000</option>
+                                <option value="Above ₹1,00,000">Above ₹1,00,000</option>
+                                <option value="Not decided yet">Not decided yet</option>
+                            </select>
+                        </div>
+
+                        <div class="form-field">
+                            <label for="message">Tell us about your campaign</label>
+                        <div class="form-field">
+
+                        
+                            <textarea
+                                id="message"
+                                name="message"
+                                placeholder="Tell us what you're building, your goals, timeline, etc."
+                                required
+                            ></textarea>
+
+                        </div>
+
+                        <button type="submit" class="btn btn-primary form-submit">
+                            Send Enquiry →
+                        </button>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="container footer-inner">
+
+            <div class="footer-logo"><span class="wordmark footer-wordmark">AVRÉLON</span></div>
+
+            <p>
+                Where Brands Meet Influence.
+            </p>
+
+            <p class="copyright">
+                © <span id="current-year"></span> AVRÉLON.
+                All rights reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+   
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+    const menuToggle = document.querySelector(".menu-toggle");
+    const navList = document.querySelector("nav ul");
+
+    if (menuToggle && navList) {
+        menuToggle.addEventListener("click", () => {
+            const isOpen = navList.classList.toggle("show");
+            menuToggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
+        });
+
+        navList.querySelectorAll("a").forEach(link => {
+            link.addEventListener("click", () => {
+                navList.classList.remove("show");
+                menuToggle.setAttribute("aria-expanded", "false");
+            });
+        });
+    }
+
+    const year = document.getElementById("current-year");
+    if (year) year.textContent = new Date().getFullYear();
+
+    const sections = document.querySelectorAll("section[id]");
+    const navLinks = document.querySelectorAll("nav a");
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                navLinks.forEach(link => {
+                    link.classList.toggle(
+                        "active",
+                        link.getAttribute("href") === "#" + entry.target.id
+                    );
+                });
+            }
+        });
+    }, { rootMargin: "-35% 0px -55% 0px" });
+
+    sections.forEach(section => observer.observe(section));
+});
+</script>
+
+
+</body>
+</html>
+
+<style>
+/* Reliable AVRÉLON campaign panels: CSS artwork, no external image dependencies */
+.logo { text-decoration:none; }
+.wordmark { font-family: 'Cormorant Garamond', Georgia, serif; font-weight:600; letter-spacing:.12em; font-size:1.75rem; color:#111; white-space:nowrap; }
+.footer-wordmark { color:#fff; }
+.campaign-art { width:100%; height:180px; box-sizing:border-box; padding:20px 22px; display:flex; flex-direction:column; justify-content:space-between; overflow:hidden; position:relative; border-radius:8px; color:#171411; background:#eee8df; }
+.campaign-art span { font-size:10px; letter-spacing:.24em; font-weight:600; }
+.campaign-art strong { font-family:'Cormorant Garamond',Georgia,serif; font-size:clamp(25px,3vw,37px); font-weight:500; line-height:.92; letter-spacing:.01em; }
+.campaign-art small { font-size:8px; letter-spacing:.16em; }
+.campaign-beauty { background:linear-gradient(125deg,#f4eee7 0%,#e5d2c4 52%,#f8f4ee 100%); }
+.campaign-beauty:after { content:''; position:absolute; width:130px;height:130px;border:1px solid rgba(80,54,41,.28);border-radius:50%;right:20px;top:25px;box-shadow:0 0 0 12px rgba(255,255,255,.12),0 0 0 26px rgba(255,255,255,.10); }
+.campaign-fashion { background:linear-gradient(120deg,#191919,#47413c); color:#fff; }
+.campaign-fashion:after { content:''; position:absolute; width:115px;height:170px;right:20px;top:10px;border:1px solid rgba(255,255,255,.35);transform:rotate(18deg); }
+.campaign-lifestyle { background:linear-gradient(120deg,#e8e2d7,#c7c1b4); }
+.campaign-lifestyle:after { content:''; position:absolute; width:115px;height:115px;right:24px;top:34px;border-radius:50%;background:rgba(255,255,255,.25); }
+.campaign-art > * { position:relative; z-index:1; }
+@media(max-width:600px){.wordmark{font-size:1.35rem}.campaign-art{height:200px}.campaign-art strong{font-size:32px}}
+</style>
