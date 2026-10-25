@@ -3,11 +3,15 @@
    ========================================== */
 
 :root {
-  --black: #080808;
-  --white: #f5f5f2;
-  --cream: #111111;
-  --grey: #b0b0b0;
-  --border: #303030;
+  --bg: #ffffff;
+  --panel: #f5f4f0;
+  --panel-light: #eae9e4;
+  --text: #111111;
+  --muted: #666666;
+  --line: #deded8;
+  --accent: #111111;
+  --serif: "Playfair Display", Georgia, serif;
+  --sans: "DM Sans", Arial, sans-serif;
 }
 
 /* Main website */
