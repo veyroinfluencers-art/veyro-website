@@ -167,27 +167,132 @@
 
 <section class="section contact" id="contact">
   <div class="container contact-grid">
+
     <div>
       <p class="eyebrow">LET'S CONNECT</p>
-      <h2>Have a project<br>in <em>mind?</em></h2>
-      <p>Tell us whether you're a brand or creator, and let's explore the right next step.</p>
-      <a class="email-link" href="mailto:avrelon.influencers@gmail.com">Contact AVRÉLON ↗</a>
+
+      <h2>
+        Let's create something<br>
+        <em>worth talking about.</em>
+      </h2>
+
+      <p>
+        Are you a brand looking for creators, or a creator looking
+        for opportunities? Contact AVRÉLON to start a conversation.
+      </p>
+
+      <div class="avrelon-contact-links">
+
+        <a href="mailto:avrelon.partnerships@gmail.com">
+          <span class="contact-label">EMAIL</span>
+          <span>avrelon.partnerships@gmail.com</span>
+        </a>
+
+        <a href="https://www.instagram.com/avrelon.influencers/"
+           target="_blank" rel="noopener noreferrer">
+          <span class="contact-label">INSTAGRAM</span>
+          <span>@avrelon.influencers ↗</span>
+        </a>
+
+        <a href="https://www.threads.net/@avrelon.influencers"
+           target="_blank" rel="noopener noreferrer">
+          <span class="contact-label">THREADS</span>
+          <span>@avrelon.influencers ↗</span>
+        </a>
+
+        <a href="https://wa.me/918555024563"
+           target="_blank" rel="noopener noreferrer">
+          <span class="contact-label">WHATSAPP</span>
+          <span>+91 85550 24563 ↗</span>
+        </a>
+
+      </div>
     </div>
 
-    <form id="contact-form">
-      <label for="name">Your name</label>
-      <input id="name" name="name" type="text" placeholder="Enter your name" required>
+    <form
+      class="contact-form"
+      action="https://formsubmit.co/avrelon.partnerships@gmail.com"
+      method="POST">
 
-      <label for="email">Email address</label>
-      <input id="email" name="email" type="email" placeholder="Enter your email" required>
+      <input type="hidden" name="_subject"
+             value="New AVRÉLON Website Enquiry">
 
-      <label for="type">I am a...</label>
-      <select id="type" name="type" required>
-        <option value="">Choose one</option>
-        <option value="Brand">Brand</option>
-        <option value="Creator">Creator</option>
+      <input type="hidden" name="_template" value="table">
+
+      <input type="hidden" name="_captcha" value="true">
+
+      <label for="name">Your Name *</label>
+      <input
+        type="text"
+        id="name"
+        name="name"
+        placeholder="Enter your name"
+        required>
+
+      <label for="company">Brand / Company *</label>
+      <input
+        type="text"
+        id="company"
+        name="company"
+        placeholder="Your brand or company"
+        required>
+
+      <label for="email">Email Address *</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="your@email.com"
+        required>
+
+      <label for="social">Instagram / Website</label>
+      <input
+        type="text"
+        id="social"
+        name="social"
+        placeholder="@brand or website">
+
+      <label for="service">What are you looking for? *</label>
+      <select id="service" name="service" required>
+        <option value="" disabled selected>Select a service</option>
+        <option value="Influencer Marketing">Influencer Marketing</option>
+        <option value="UGC Campaign">UGC Campaign</option>
+        <option value="Creator Partnership">Creator Partnership</option>
+        <option value="Campaign Strategy">Campaign Strategy</option>
         <option value="Other">Other</option>
       </select>
+
+      <label for="budget">Estimated Campaign Budget</label>
+      <select id="budget" name="budget">
+        <option value="">Choose a budget range</option>
+        <option value="Under ₹10,000">Under ₹10,000</option>
+        <option value="₹10,000–₹25,000">₹10,000–₹25,000</option>
+        <option value="₹25,000–₹50,000">₹25,000–₹50,000</option>
+        <option value="₹50,000–₹1,00,000">₹50,000–₹1,00,000</option>
+        <option value="Above ₹1,00,000">Above ₹1,00,000</option>
+        <option value="Not decided yet">Not decided yet</option>
+      </select>
+
+      <label for="message">Tell us about your campaign *</label>
+      <textarea
+        id="message"
+        name="message"
+        rows="5"
+        placeholder="Describe your campaign, requirements and timeline..."
+        required></textarea>
+
+      <button type="submit" class="button button-dark">
+        Send Enquiry ↗
+      </button>
+
+      <p class="form-note">
+        Your enquiry will be sent to the AVRÉLON partnerships email.
+      </p>
+
+    </form>
+
+  </div>
+</section>
 
       <label for="message">Tell us about your enquiry</label>
       <textarea id="message" name="message" rows="5" placeholder="Write your message..." required></textarea>
