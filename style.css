@@ -1061,3 +1061,12 @@ footer {
         height: 260px;
     }
 }
+/* AVRÉLON HEADER LOGO */
+.site-logo {
+    display: block;
+    width: 140px;
+    height: 45px;
+    object-fit: contain;
+    object-position: left center;
+    max-width: 100%;
+}
