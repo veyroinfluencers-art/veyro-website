@@ -957,4 +957,57 @@ footer {
         max-width: 280px;
         height: 175px;
     }
+}/* ===== AVRÉLON LOGO ===== */
+
+.logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.logo img {
+    display: block;
+    width: 180px;
+    height: auto;
+    max-height: 65px;
+    object-fit: contain;
+}
+
+.footer-logo img {
+    display: block;
+    width: 160px;
+    height: auto;
+    max-height: 55px;
+    object-fit: contain;
+}
+
+/* ===== PORTFOLIO IMAGES ===== */
+
+#work .work-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+}
+
+#work .work-card {
+    overflow: hidden;
+    min-width: 0;
+}
+
+#work .work-image {
+    display: block;
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    object-position: center;
+}
+
+@media (max-width: 768px) {
+    #work .work-grid {
+        grid-template-columns: 1fr;
+    }
+
+    #work .work-image {
+        height: 260px;
+    }
 }
