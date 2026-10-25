@@ -1070,3 +1070,14 @@ footer {
     object-position: left center;
     max-width: 100%;
 }
+/* FORCE AVRÉLON LOGO SIZE */
+header .logo img,
+header img.site-logo,
+header img[alt="AVRÉLON"] {
+    width: 120px !important;
+    height: 40px !important;
+    max-width: 120px !important;
+    max-height: 40px !important;
+    object-fit: contain !important;
+    display: block !important;
+}
