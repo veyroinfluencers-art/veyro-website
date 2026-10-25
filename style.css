@@ -1081,3 +1081,85 @@ header img[alt="AVRÉLON"] {
     object-fit: contain !important;
     display: block !important;
 }
+/* FIX AVRÉLON HEADER LOGO */
+header .logo {
+    display: flex !important;
+    align-items: center !important;
+    width: 140px !important;
+    height: 45px !important;
+    flex: 0 0 140px !important;
+    overflow: hidden !important;
+}
+
+header .logo-crop {
+    display: block !important;
+    width: 140px !important;
+    height: 45px !important;
+    overflow: hidden !important;
+}
+
+header .logo-crop img {
+    display: block !important;
+    width: 140px !important;
+    height: 45px !important;
+    max-width: 140px !important;
+    max-height: 45px !important;
+    object-fit: contain !important;
+    object-position: left center !important;
+}/* FIX AVRÉLON HEADER LOGO */
+header .logo {
+    display: flex !important;
+    align-items: center !important;
+    width: 140px !important;
+    height: 45px !important;
+    flex: 0 0 140px !important;
+    overflow: hidden !important;
+}
+
+header .logo-crop {
+    display: block !important;
+    width: 140px !important;
+    height: 45px !important;
+    overflow: hidden !important;
+}
+
+header .logo-crop img {
+    display: block !important;
+    width: 140px !important;
+    height: 45px !important;
+    max-width: 140px !important;
+    max-height: 45px !important;
+    object-fit: contain !important;
+    object-position: left center !important;
+}/* CONTROL BOTH AVRÉLON LOGOS */
+header .logo,
+header .logo-crop {
+    width: 140px !important;
+    height: 45px !important;
+    max-width: 140px !important;
+    overflow: hidden !important;
+}
+
+header .logo img,
+header .logo-crop img {
+    width: 140px !important;
+    height: 45px !important;
+    max-width: 140px !important;
+    max-height: 45px !important;
+    object-fit: contain !important;
+}
+
+footer .footer-logo {
+    width: 120px !important;
+    height: 40px !important;
+    overflow: hidden !important;
+}
+
+footer .footer-logo img {
+    display: block !important;
+    width: 120px !important;
+    height: 40px !important;
+    max-width: 120px !important;
+    max-height: 40px !important;
+    object-fit: contain !important;
+}
