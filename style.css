@@ -239,6 +239,9 @@ body {
   .contact-form .button {
     width: 100%;
   }
+   .footer-logo img {
+  filter: brightness(0) invert(1);
+}
 .footer-logo img {
 filter: invert(1);
 background: transparent;
