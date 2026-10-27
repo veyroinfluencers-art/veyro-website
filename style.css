@@ -239,3 +239,7 @@ body {
   .contact-form .button {
     width: 100%;
   }
+.footer-logo img {
+filter: invert(1);
+background: transparent;
+}
