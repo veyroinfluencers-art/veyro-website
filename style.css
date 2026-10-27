@@ -1,33 +1,33 @@
 /* ==========================================
-   AVRÉLON — DARK LUXURY THEME
-   ========================================== */
+AVRÉLON — DARK LUXURY THEME
+========================================== */
 
 :root {
-  --bg: #ffffff;
-  --panel: #f5f4f0;
-  --panel-light: #eae9e4;
-  --text: #111111;
-  --muted: #666666;
-  --line: #deded8;
-  --accent: #111111;
-  --serif: "Playfair Display", Georgia, serif;
-  --sans: "DM Sans", Arial, sans-serif;
+--bg: #ffffff;
+--panel: #f5f4f0;
+--panel-light: #eae9e4;
+--text: #111111;
+--muted: #666666;
+--line: #deded8;
+--accent: #111111;
+--serif: "Playfair Display", Georgia, serif;
+--sans: "DM Sans", Arial, sans-serif;
 }
 
 /* Main website */
 
 body {
-  background: #080808 !important;
-  color: #f5f5f2 !important;
+background: #080808 !important;
+color: #f5f5f2 !important;
 }
 
 .header {
-  background: #080808 !important;
-  border-bottom: 1px solid #292929 !important;
+background: #080808 !important;
+border-bottom: 1px solid #292929 !important;
 }
 
 .navigation a {
-  color: #f5f5f2 !important;
+color: #f5f5f2 !important;
 }
 
 .hero,
@@ -35,212 +35,234 @@ body {
 .work,
 .contact,
 .services {
-  background: #080808 !important;
-  color: #f5f5f2 !important;
+background: #080808 !important;
+color: #f5f5f2 !important;
 }
 
 .creators {
-  background: #151515 !important;
-  color: #f5f5f2 !important;
+background: #151515 !important;
+color: #f5f5f2 !important;
 }
 
 .service-card {
-  background: #111111 !important;
-  border-color: #333333 !important;
-  color: #f5f5f2 !important;
+background: #111111 !important;
+border-color: #333333 !important;
+color: #f5f5f2 !important;
 }
 
 .service-card p,
 .about-grid > p:last-child,
 .section-intro,
 .work-caption p {
-  color: #b0b0b0 !important;
+color: #b0b0b0 !important;
 }
 
 /* Premium buttons */
 
 .button-dark {
-  background: #f5f5f2 !important;
-  color: #080808 !important;
-  border: 1px solid #f5f5f2 !important;
+background: #f5f5f2 !important;
+color: #080808 !important;
+border: 1px solid #f5f5f2 !important;
 }
 
 .button-dark:hover {
-  background: #cccccc !important;
+background: #cccccc !important;
 }
 
 .button-light {
-  background: transparent !important;
-  color: #f5f5f2 !important;
-  border-color: #777777 !important;
+background: transparent !important;
+color: #f5f5f2 !important;
+border-color: #777777 !important;
 }
 
 /* Portfolio concepts */
 
 .art-beauty {
-  background: #302421 !important;
-  color: #f5e9e3 !important;
+background: #302421 !important;
+color: #f5e9e3 !important;
 }
 
 .art-fashion {
-  background: #242424 !important;
-  color: #f5f5f2 !important;
+background: #242424 !important;
+color: #f5f5f2 !important;
 }
 
 .art-lifestyle {
-  background: #29291f !important;
-  color: #f5f5f2 !important;
+background: #29291f !important;
+color: #f5f5f2 !important;
 }
 
 /* Contact form */
 
 .contact form label {
-  color: #f5f5f2 !important;
+color: #f5f5f2 !important;
 }
 
 .contact form input,
 .contact form select,
 .contact form textarea {
-  background: #111111 !important;
-  color: #f5f5f2 !important;
-  border: 1px solid #454545 !important;
+background: #111111 !important;
+color: #f5f5f2 !important;
+border: 1px solid #454545 !important;
 }
 
 .contact form input::placeholder,
 .contact form textarea::placeholder {
-  color: #888888 !important;
+color: #888888 !important;
 }
 
 .contact form input:focus,
 .contact form select:focus,
 .contact form textarea:focus {
-  border-color: #f5f5f2 !important;
+border-color: #f5f5f2 !important;
 }
 
 .contact .form-note,
 .contact-grid > div > p:not(.eyebrow) {
-  color: #b0b0b0 !important;
+color: #b0b0b0 !important;
 }
 
 .email-link {
-  color: #f5f5f2 !important;
-  border-color: #f5f5f2 !important;
+color: #f5f5f2 !important;
+border-color: #f5f5f2 !important;
 }
 
-.footer {
-  background: #080808 !important;
-  color: #f5f5f2 !important;
+/* Footer */
+
+footer {
+background: #080808 !important;
+color: #f5f5f2 !important;
 }
 
-.footer-top p,
-.footer-bottom {
-  color: #b0b0b0 !important;
+footer .footer-top p,
+footer .footer-bottom {
+color: #b0b0b0 !important;
 }
 
-.footer-top,
-.footer-bottom {
-  border-color: #303030 !important;
+footer .footer-top,
+footer .footer-bottom {
+border-color: #303030 !important;
 }
+
+/* Footer logo — use the transparent white logo file */
+
+.footer-logo {
+display: inline-block;
+background: transparent !important;
+}
+
+.footer-logo img {
+display: block;
+width: 208px;
+max-width: 100%;
+height: auto;
+background: transparent !important;
+filter: none !important;
+}
+
+/* Navigation */
 
 .menu-toggle {
-  color: #f5f5f2 !important;
+color: #f5f5f2 !important;
 }
 
-@media (max-width: 800px) {
-  .navigation {
-    background: #080808 !important;
-    border-color: #303030 !important;
-  }
-}
-/* AVRÉLON CONTACT DETAILS */
+/* AVRÉLON contact details */
 
 .avrelon-contact-links {
-  display: flex;
-  flex-direction: column;
-  gap: 0;
-  margin-top: 35px;
-  border-top: 1px solid #333333;
+display: flex;
+flex-direction: column;
+gap: 0;
+margin-top: 35px;
+border-top: 1px solid #333333;
 }
 
 .avrelon-contact-links a {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-  padding: 18px 0;
-  border-bottom: 1px solid #333333;
-  color: #f5f5f2;
-  overflow-wrap: anywhere;
-  transition: color 0.2s ease;
+display: flex;
+flex-direction: column;
+gap: 4px;
+padding: 18px 0;
+border-bottom: 1px solid #333333;
+color: #f5f5f2;
+overflow-wrap: anywhere;
+transition: color 0.2s ease;
 }
 
 .avrelon-contact-links a:hover {
-  color: #b7b7b7;
+color: #b7b7b7;
 }
 
 .contact-label {
-  color: #999999;
-  font-size: 10px;
-  font-weight: 700;
-  letter-spacing: 2px;
+color: #999999;
+font-size: 10px;
+font-weight: 700;
+letter-spacing: 2px;
 }
 
 .contact-form {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  width: 100%;
-  max-width: 100%;
+display: flex;
+flex-direction: column;
+gap: 12px;
+width: 100%;
+max-width: 100%;
 }
 
 .contact-form label {
-  margin-top: 8px;
-  color: #f5f5f2;
-  font-size: 11px;
-  font-weight: 700;
-  letter-spacing: 1px;
-  text-transform: uppercase;
+margin-top: 8px;
+color: #f5f5f2;
+font-size: 11px;
+font-weight: 700;
+letter-spacing: 1px;
+text-transform: uppercase;
 }
 
 .contact-form input,
 .contact-form select,
 .contact-form textarea {
-  width: 100%;
-  padding: 15px;
-  background: #111111;
-  color: #f5f5f2;
-  border: 1px solid #454545;
-  border-radius: 0;
-  font: inherit;
+width: 100%;
+padding: 15px;
+background: #111111;
+color: #f5f5f2;
+border: 1px solid #454545;
+border-radius: 0;
+font: inherit;
 }
 
 .contact-form input::placeholder,
 .contact-form textarea::placeholder {
-  color: #888888;
+color: #888888;
 }
 
 .contact-form textarea {
-  resize: vertical;
+resize: vertical;
 }
 
 .contact-form .button {
-  align-self: flex-start;
-  margin-top: 12px;
+align-self: flex-start;
+margin-top: 12px;
 }
 
 .contact-form .form-note {
-  color: #999999;
-  font-size: 11px;
+color: #999999;
+font-size: 11px;
 }
 
+/* Responsive layout */
+
 @media (max-width: 800px) {
-  .avrelon-contact-links {
-    margin-bottom: 25px;
-  }
-  .contact-form .button {
-    width: 100%;
-  }
-   
+.navigation {
+background: #080808 !important;
+border-color: #303030 !important;
+}
+
+.avrelon-contact-links {
+margin-bottom: 25px;
+}
+
+.contact-form .button {
+width: 100%;
+}
+
 .footer-logo img {
-  filter: invert(1);
-  background: transparent;
+width: 160px;
+}
 }
