@@ -241,8 +241,3 @@ body {
     width: 100%;
   }
 }
-
-
-.footer-logo img {
-filter: brightness(0) invert(1);
-}
